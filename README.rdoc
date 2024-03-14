@@ -8,7 +8,33 @@ Kozuchi is a home-accounting web application. ('家計簿' in Japanese.)
 * It works in Rails 5.2.3 and Ruby >= 2.6.3.
 * It uses PostgreSQL.
 
+
+
 == How to set up
+
+```shell
+$ bundle install --path vendor/bundle
+```
+
+次は失敗する:
+
+```shell
+$ bin/rails webpacker:install
+```
+
+Node.js の期待ヴァージョンが異なる。Webpacker を剥がすしかない.
+
+```shell
+$ yarn install
+yarn install v1.22.21
+info No lockfile found.
+[1/5] Validating package.json...
+error kozuchi@: The engine "node" is incompatible with this module. Expected version "16.x". Got "18.19.0"
+error Found incompatible module.
+info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.
+```
+
+
 
 * Set some enviroment variables for your needs. see https://github.com/nay/kozuchi/wiki/%E7%92%B0%E5%A2%83%E5%A4%89%E6%95%B0 .
 * If you need to migrate from MySQL version, see https://github.com/nay/kozuchi/wiki/MySQL%E7%89%88%E3%81%8B%E3%82%89PostgreSQL%E7%89%88%E3%81%B8%E3%81%AE%E7%A7%BB%E8%A1%8C%E6%89%8B%E9%A0%86 .

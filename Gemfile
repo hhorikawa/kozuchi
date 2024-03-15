@@ -1,5 +1,6 @@
 
-source 'http://rubygems.org'
+source 'https://rubygems.org'
+
 ruby '>= 3.1.1'
 
 gem 'rails', '~> 6.1.7'
@@ -21,7 +22,9 @@ gem 'httpclient'
 
 #gem 'passenger'
 
-# 最新が 2019年.
+# 最新が 2019年. 
+# sassc-rails は非推奨. 依存する sassc gem -> libsass is deprecated.
+#   -> cssbundling-rails or webpack が移行先
 gem 'sassc-rails'
 
 gem 'rails-controller-testing'

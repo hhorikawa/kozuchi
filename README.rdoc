@@ -5,7 +5,7 @@
 Kozuchi is a home-accounting web application. ('家計簿' in Japanese.)
 
 * It supports Japanese only.
-* It works in Rails 5.2.3 and Ruby >= 2.6.3.
+* It works on Ruby on Rails 6.1 and Ruby >= 3.1.
 * It uses PostgreSQL.
 
 
